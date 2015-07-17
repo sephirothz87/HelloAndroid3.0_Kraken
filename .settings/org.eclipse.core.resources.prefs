@@ -1,2 +1,13 @@
 eclipse.preferences.version=1
+encoding//src/com/sephiroth/zzc/android_component/ALogger.java=UTF-8
+encoding//src/com/sephiroth/zzc/android_component/AssetsManager.java=UTF-8
+encoding//src/com/sephiroth/zzc/android_component/NoUse.java=UTF-8
+encoding//src/com/sephiroth/zzc/android_component/activity/BaseActivity.java=UTF-8
+encoding//src/com/sephiroth/zzc/android_component/boundary/MainActivity.java=UTF-8
+encoding//src/com/sephiroth/zzc/android_component/service/BaseService.java=UTF-8
+encoding//src/com/sephiroth/zzc/android_component/service/IUseMemService.java=UTF-8
+encoding//src/com/sephiroth/zzc/android_component/service/UseMemIntentService.java=UTF-8
 encoding//src/com/sephiroth/zzc/android_component/service/UseMemService.java=UTF-8
+encoding//src/com/sephiroth/zzc/android_component/util/AndroidUtil.java=UTF-8
+encoding//src/com/sephiroth/zzc/android_component/util/AndroidUtilFunc.java=UTF-8
+encoding//src/com/sephiroth/zzc/android_component/util/PackageUtil.java=UTF-8

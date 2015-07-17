@@ -14,7 +14,7 @@ public class NoUse {
 			f.createNewFile();
 		}
 		FileOutputStream fos = new FileOutputStream(f);
-		byte[] buffer = new byte[kb * UNIT]; // Ö±½ÓÊ¹ÓÃÄÚ´æ´´½¨
+		byte[] buffer = new byte[kb * UNIT]; // ç›´æŽ¥ä½¿ç”¨å†…å­˜åˆ›å»º
 		fos.write(buffer);
 		fos.close();
 	}
@@ -27,7 +27,7 @@ public class NoUse {
 		}
 		FileOutputStream fos = new FileOutputStream(f);
 		for (int i = 0; i < mb; i++) {
-			byte[] buffer = new byte[UNIT * UNIT]; // 1´Î1M
+			byte[] buffer = new byte[UNIT * UNIT]; // 1æ¬¡1M
 			fos.write(buffer);
 		}
 		fos.close();
@@ -41,7 +41,7 @@ public class NoUse {
 		}
 		FileOutputStream fos = new FileOutputStream(f);
 		for (int i = 0; i < gb * (UNIT / 4); i++) {
-			byte[] buffer = new byte[4 * UNIT * UNIT]; // 1´Î4M
+			byte[] buffer = new byte[4 * UNIT * UNIT]; // 1æ¬¡4M
 			fos.write(buffer);
 		}
 		fos.close();

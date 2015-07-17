@@ -8,9 +8,9 @@ import android.util.Log;
 public class PackageUtil {
 	
 	/**
-	 * È¡µÃ½ø³ÌÁĞ±í
-	 * @param act_mgr	ActivityManager¶ÔÏó£¬ÔÚActivityÄÚ»ñÈ¡£ºActivityManager act_mgr = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
-	 * @return	½ø³ÌÁĞ±í
+	 * å–å¾—è¿›ç¨‹åˆ—è¡¨
+	 * @param act_mgr	ActivityManagerå¯¹è±¡ï¼Œåœ¨Activityå†…è·å–ï¼šActivityManager act_mgr = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+	 * @return	è¿›ç¨‹åˆ—è¡¨
 	 */
 	public static List<ActivityManager.RunningAppProcessInfo> getAppProcessInfoList(
 			ActivityManager act_mgr) {
@@ -20,8 +20,8 @@ public class PackageUtil {
 	}
 	
 	/**
-	 * ´òÓ¡½ø³ÌÃû³ÆºÍ½ø³ÌidÁĞ±í
-	 * @param act_mgr	ActivityManager¶ÔÏó£¬ÔÚActivityÄÚ»ñÈ¡£ºActivityManager act_mgr = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+	 * æ‰“å°è¿›ç¨‹åç§°å’Œè¿›ç¨‹idåˆ—è¡¨
+	 * @param act_mgr	ActivityManagerå¯¹è±¡ï¼Œåœ¨Activityå†…è·å–ï¼šActivityManager act_mgr = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
 	 */
 	public static void printProcessList(ActivityManager act_mgr) {
 		List<ActivityManager.RunningAppProcessInfo> appProcessList = getAppProcessInfoList(act_mgr);
@@ -33,10 +33,10 @@ public class PackageUtil {
 	}
 	
 	/**
-	 * ¸ù¾İÖ¸¶¨½ø³ÌÃû»ñµÃpid
-	 * @param act_mgr	ActivityManager¶ÔÏó£¬ÔÚActivityÄÚ»ñÈ¡£ºActivityManager act_mgr = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
-	 * @param p_name	½ø³ÌÃû£¬Èç"com.tencent.qqlive"
-	 * @return	½ø³Ìid,pid
+	 * æ ¹æ®æŒ‡å®šè¿›ç¨‹åè·å¾—pid
+	 * @param act_mgr	ActivityManagerå¯¹è±¡ï¼Œåœ¨Activityå†…è·å–ï¼šActivityManager act_mgr = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+	 * @param p_name	è¿›ç¨‹åï¼Œå¦‚"com.tencent.qqlive"
+	 * @return	è¿›ç¨‹id,pid
 	 */
 	public static int getPidByPName(ActivityManager act_mgr, String p_name) {
 		int pid = -1;
@@ -51,10 +51,10 @@ public class PackageUtil {
 	}
 	
 	/**
-	 * ¸ù¾İÖ¸¶¨½ø³ÌÃû»ñµÃuid
-	 * @param act_mgr	ActivityManager¶ÔÏó£¬ÔÚActivityÄÚ»ñÈ¡£ºActivityManager act_mgr = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
-	 * @param p_name	½ø³ÌÃû£¬Èç"com.tencent.qqlive"
-	 * @return	ÓÃ»§id£¬uid
+	 * æ ¹æ®æŒ‡å®šè¿›ç¨‹åè·å¾—uid
+	 * @param act_mgr	ActivityManagerå¯¹è±¡ï¼Œåœ¨Activityå†…è·å–ï¼šActivityManager act_mgr = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+	 * @param p_name	è¿›ç¨‹åï¼Œå¦‚"com.tencent.qqlive"
+	 * @return	ç”¨æˆ·idï¼Œuid
 	 */
 	public static int getUidByPName(ActivityManager act_mgr, String p_name) {
 		int uid = -1;

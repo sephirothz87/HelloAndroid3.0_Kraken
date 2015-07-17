@@ -85,7 +85,7 @@ public class MainActivity extends Activity {
 				.setOnClickListener(mButton_function_listener_20140628150700);
 	}
 	
-	//2014-12-26 20:57:35  ²âÊÔAssets¿½±´Ä£¿é
+	//2014-12-26 20:57:35  æµ‹è¯•Assetsæ‹·è´æ¨¡å—
 	OnClickListener mButton_function_listener_20141226205935 = new OnClickListener() {
 		@Override
 		public void onClick(View v) {
@@ -93,9 +93,9 @@ public class MainActivity extends Activity {
 		}
 	};
 
-	//2014-12-26 20:57:35  ²âÊÔAssets¿½±´Ä£¿é
+	//2014-12-26 20:57:35  æµ‹è¯•Assetsæ‹·è´æ¨¡å—
 
-	//2014-7-26 16:39:21	²âÊÔÃüÁîĞĞÔÚ4.3ÉÏµÄÖ´ĞĞÇé¿ö
+	//2014-7-26 16:39:21	æµ‹è¯•å‘½ä»¤è¡Œåœ¨4.3ä¸Šçš„æ‰§è¡Œæƒ…å†µ
 	OnClickListener mButton_function_listener_20140726163906 = new OnClickListener() {
 		@Override
 		public void onClick(View v) {
@@ -142,7 +142,7 @@ public class MainActivity extends Activity {
 	Intent svrTestIntentServiceIntent = new Intent(
 			"com.sephiroth.zzc.android_component.service.UserMemIntentService");
 
-	// ´´½¨Ò»¸ö ServiceConnection ¶ÔÏó
+	// åˆ›å»ºä¸€ä¸ª ServiceConnection å¯¹è±¡
 	final ServiceConnection connection = new ServiceConnection() {
 
 		public void onServiceDisconnected(ComponentName name) {
@@ -322,21 +322,21 @@ public class MainActivity extends Activity {
 		@Override
 		public void onClick(View v) {
 			ProcessBuilder pb = new ProcessBuilder("/system/bin/sh");
-			pb.directory(new File("/"));// ÉèÖÃshellµÄµ±Ç°Ä¿Â¼¡£
+			pb.directory(new File("/"));// è®¾ç½®shellçš„å½“å‰ç›®å½•ã€‚
 			try {
 				Process proc = pb.start();
-				// »ñÈ¡ÊäÈëÁ÷£¬¿ÉÒÔÍ¨¹ıËü»ñÈ¡SHELLµÄÊä³ö¡£
+				// è·å–è¾“å…¥æµï¼Œå¯ä»¥é€šè¿‡å®ƒè·å–SHELLçš„è¾“å‡ºã€‚
 				BufferedReader in = new BufferedReader(new InputStreamReader(
 						proc.getInputStream()));
 				BufferedReader err = new BufferedReader(new InputStreamReader(
 						proc.getErrorStream()));
-				// »ñÈ¡Êä³öÁ÷£¬¿ÉÒÔÍ¨¹ıËüÏòSHELL·¢ËÍÃüÁî¡£
+				// è·å–è¾“å‡ºæµï¼Œå¯ä»¥é€šè¿‡å®ƒå‘SHELLå‘é€å‘½ä»¤ã€‚
 				PrintWriter out = new PrintWriter(new BufferedWriter(
 						new OutputStreamWriter(proc.getOutputStream())), true);
 				out.println("pwd");
-				out.println("su root");// Ö´ĞĞÕâÒ»¾äÊ±»áµ¯³ö¶Ô»°¿ò£¨ÒÔÏÂ³ÌĞòÒªÇóÊÚÓè×î¸ßÈ¨ÏŞ...£©£¬ÒªÇóÓÃ»§È·ÈÏ¡£
-				// out.println("cd /data/data");//Õâ¸öÄ¿Â¼ÔÚÏµÍ³ÖĞÒªÇóÓĞrootÈ¨ÏŞ²Å¿ÉÒÔ·ÃÎÊµÄ¡£
-				// out.println("ls -l");//Õâ¸öÃüÁîÈç¹ûÄÜÁĞ³öµ±Ç°°²×°µÄAPKµÄÊı¾İÎÄ¼ş´æ·ÅÄ¿Â¼£¬¾ÍËµÃ÷ÎÒÃÇÓĞÁËROOTÈ¨ÏŞ¡£
+				out.println("su root");// æ‰§è¡Œè¿™ä¸€å¥æ—¶ä¼šå¼¹å‡ºå¯¹è¯æ¡†ï¼ˆä»¥ä¸‹ç¨‹åºè¦æ±‚æˆäºˆæœ€é«˜æƒé™...ï¼‰ï¼Œè¦æ±‚ç”¨æˆ·ç¡®è®¤ã€‚
+				// out.println("cd /data/data");//è¿™ä¸ªç›®å½•åœ¨ç³»ç»Ÿä¸­è¦æ±‚æœ‰rootæƒé™æ‰å¯ä»¥è®¿é—®çš„ã€‚
+				// out.println("ls -l");//è¿™ä¸ªå‘½ä»¤å¦‚æœèƒ½åˆ—å‡ºå½“å‰å®‰è£…çš„APKçš„æ•°æ®æ–‡ä»¶å­˜æ”¾ç›®å½•ï¼Œå°±è¯´æ˜æˆ‘ä»¬æœ‰äº†ROOTæƒé™ã€‚
 				String cmd = "cp -r /data/data/com.tencent.qqlive /sdcard/testpath/test";
 				// Process p_start_test_service = Runtime.getRuntime().exec(
 				// cmd);
@@ -508,27 +508,27 @@ public class MainActivity extends Activity {
 	// 2013-12-25 11:53:45 test intent
 
 	// 2013-12-23 17:39:55 test shake
-	// //¸ĞÓ¦¹ÜÀíÆ÷
+	// //æ„Ÿåº”ç®¡ç†å™¨
 	// private SensorManager mSensorManager;
 	//
-	// //Õğ¶¯Æ÷
+	// //éœ‡åŠ¨å™¨
 	// private Vibrator vibrator;
 	//
 	// void testFunction() {
-	// // 1»ñµÃÓ²¼şĞÅÏ¢
+	// // 1è·å¾—ç¡¬ä»¶ä¿¡æ¯
 	// mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
 	// vibrator = (Vibrator) getSystemService(Service.VIBRATOR_SERVICE);
 	// // activityManager = (ActivityManager)
 	// // getSystemService(ACTIVITY_SERVICE);
 	//
-	// // 2 ÅĞ¶Ïµ±Ç°ÊÖ»úÊÇ·ñ´ø¼ÓËÙ¶È¸ĞÓ¦Æ÷£¬Èç¹û²»´ø£¬Ö±½Ó½áÊø£¬²»Æô¶¯·şÎñ
+	// // 2 åˆ¤æ–­å½“å‰æ‰‹æœºæ˜¯å¦å¸¦åŠ é€Ÿåº¦æ„Ÿåº”å™¨ï¼Œå¦‚æœä¸å¸¦ï¼Œç›´æ¥ç»“æŸï¼Œä¸å¯åŠ¨æœåŠ¡
 	// List<Sensor> sensors = mSensorManager
 	// .getSensorList(Sensor.TYPE_ACCELEROMETER);
 	// if (sensors != null)
 	// if (sensors.size() == 0)
 	// return;
 	//
-	// // 4×¢²áÕìÌıÊÂ¼ş
+	// // 4æ³¨å†Œä¾¦å¬äº‹ä»¶
 	// mSensorManager.registerListener(mSensorListener,
 	// mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
 	// SensorManager.SENSOR_DELAY_NORMAL);
@@ -536,7 +536,7 @@ public class MainActivity extends Activity {
 	//
 	//
 	//
-	// // 3Éú³É¸ĞÓ¦ÕìÌıÊÂ¼ş
+	// // 3ç”Ÿæˆæ„Ÿåº”ä¾¦å¬äº‹ä»¶
 	// SensorEventListener mSensorListener = new SensorEventListener() {
 	// @Override
 	// public void onAccuracyChanged(Sensor sensor, int accuracy) {
@@ -544,40 +544,40 @@ public class MainActivity extends Activity {
 	//
 	// }
 	//
-	// // ¸ĞÓ¦Æ÷·¢Éú¸Ä±ä
+	// // æ„Ÿåº”å™¨å‘ç”Ÿæ”¹å˜
 	// @Override
 	// public void onSensorChanged(SensorEvent event) {
 	// // // TODO Auto-generated method stub
 	// // int sensorType = event.sensor.getType();
 	// //
-	// // // ¶ÁÈ¡Ò¡Ò»Ò¡Ãô¸ĞÖµ
+	// // // è¯»å–æ‘‡ä¸€æ‘‡æ•æ„Ÿå€¼
 	// // // int
 	// // //
 	// //
 	// shakeSenseValue=Integer.parseInt(getResources().getString(R.string.shakeSenseValue));
 	// // int shakeSenseValue = 50;
-	// // // values[0]:XÖá£¬values[1]£ºYÖá£¬values[2]£ºZÖá
+	// // // values[0]:Xè½´ï¼Œvalues[1]ï¼šYè½´ï¼Œvalues[2]ï¼šZè½´
 	// // float[] values = event.values;
 	// //
 	// // if (sensorType == Sensor.TYPE_ACCELEROMETER) {
 	// // if ((Math.abs(values[0]) > shakeSenseValue
 	// // || Math.abs(values[1]) > shakeSenseValue || Math
 	// // .abs(values[2]) > shakeSenseValue)) {
-	// // // ´¥·¢ÊÂ¼ş£¬Ö´ĞĞ´ò¿ªÓ¦ÓÃĞĞÎª
+	// // // è§¦å‘äº‹ä»¶ï¼Œæ‰§è¡Œæ‰“å¼€åº”ç”¨è¡Œä¸º
 	// // vibrator.vibrate(500);
 	// // AndroidUtilFunc.PL("shake once!!");
 	// // }
 	// // }
 	//
-	// // ´«¸ĞÆ÷ĞÅÏ¢¸Ä±äÊ±Ö´ĞĞ¸Ã·½·¨
+	// // ä¼ æ„Ÿå™¨ä¿¡æ¯æ”¹å˜æ—¶æ‰§è¡Œè¯¥æ–¹æ³•
 	// float[] values = event.values;
-	// float x = values[0]; // xÖá·½ÏòµÄÖØÁ¦¼ÓËÙ¶È£¬ÏòÓÒÎªÕı
-	// float y = values[1]; // yÖá·½ÏòµÄÖØÁ¦¼ÓËÙ¶È£¬ÏòÇ°ÎªÕı
-	// float z = values[2]; // zÖá·½ÏòµÄÖØÁ¦¼ÓËÙ¶È£¬ÏòÉÏÎªÕı
-	// AndroidUtilFunc.PL("xÖá·½ÏòµÄÖØÁ¦¼ÓËÙ¶È" + x + "£»yÖá·½ÏòµÄÖØÁ¦¼ÓËÙ¶È" + y
-	// + "£»zÖá·½ÏòµÄÖØÁ¦¼ÓËÙ¶È" + z);
-	// // Ò»°ãÔÚÕâÈı¸ö·½ÏòµÄÖØÁ¦¼ÓËÙ¶È´ïµ½40¾Í´ïµ½ÁËÒ¡»ÎÊÖ»úµÄ×´Ì¬¡£
-	// int medumValue = 19;// ÈıĞÇ i9250ÔõÃ´»Î¶¼²»»á³¬¹ı20£¬Ã»°ì·¨£¬Ö»ÉèÖÃ19ÁË
+	// float x = values[0]; // xè½´æ–¹å‘çš„é‡åŠ›åŠ é€Ÿåº¦ï¼Œå‘å³ä¸ºæ­£
+	// float y = values[1]; // yè½´æ–¹å‘çš„é‡åŠ›åŠ é€Ÿåº¦ï¼Œå‘å‰ä¸ºæ­£
+	// float z = values[2]; // zè½´æ–¹å‘çš„é‡åŠ›åŠ é€Ÿåº¦ï¼Œå‘ä¸Šä¸ºæ­£
+	// AndroidUtilFunc.PL("xè½´æ–¹å‘çš„é‡åŠ›åŠ é€Ÿåº¦" + x + "ï¼›yè½´æ–¹å‘çš„é‡åŠ›åŠ é€Ÿåº¦" + y
+	// + "ï¼›zè½´æ–¹å‘çš„é‡åŠ›åŠ é€Ÿåº¦" + z);
+	// // ä¸€èˆ¬åœ¨è¿™ä¸‰ä¸ªæ–¹å‘çš„é‡åŠ›åŠ é€Ÿåº¦è¾¾åˆ°40å°±è¾¾åˆ°äº†æ‘‡æ™ƒæ‰‹æœºçš„çŠ¶æ€ã€‚
+	// int medumValue = 19;// ä¸‰æ˜Ÿ i9250æ€ä¹ˆæ™ƒéƒ½ä¸ä¼šè¶…è¿‡20ï¼Œæ²¡åŠæ³•ï¼Œåªè®¾ç½®19äº†
 	// if (Math.abs(x) > medumValue || Math.abs(y) > medumValue
 	// || Math.abs(z) > medumValue) {
 	// vibrator.vibrate(200);
@@ -588,17 +588,17 @@ public class MainActivity extends Activity {
 	//
 	// protected void onResume() {
 	// super.onResume();
-	// if (mSensorManager != null) {// ×¢²á¼àÌıÆ÷
+	// if (mSensorManager != null) {// æ³¨å†Œç›‘å¬å™¨
 	// mSensorManager.registerListener(mSensorListener,
 	// mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
 	// SensorManager.SENSOR_DELAY_NORMAL);
-	// // µÚÒ»¸ö²ÎÊıÊÇListener£¬µÚ¶ş¸ö²ÎÊıÊÇËùµÃ´«¸ĞÆ÷ÀàĞÍ£¬µÚÈı¸ö²ÎÊıÖµ»ñÈ¡´«¸ĞÆ÷ĞÅÏ¢µÄÆµÂÊ
+	// // ç¬¬ä¸€ä¸ªå‚æ•°æ˜¯Listenerï¼Œç¬¬äºŒä¸ªå‚æ•°æ˜¯æ‰€å¾—ä¼ æ„Ÿå™¨ç±»å‹ï¼Œç¬¬ä¸‰ä¸ªå‚æ•°å€¼è·å–ä¼ æ„Ÿå™¨ä¿¡æ¯çš„é¢‘ç‡
 	// }
 	// }
 	//
 	// protected void onPause() {
 	// super.onPause();
-	// if (mSensorManager != null) {// È¡Ïû¼àÌıÆ÷
+	// if (mSensorManager != null) {// å–æ¶ˆç›‘å¬å™¨
 	// mSensorManager.unregisterListener(mSensorListener);
 	// }
 	// }
@@ -770,14 +770,14 @@ public class MainActivity extends Activity {
 		}
 	};
 
-	// Æô¶¯instrument²âÊÔ£¬²¢ÇÒ½²¿ØÖÆÌ¨Êä³ö±£´æ³ÉÎÄ¼ş
+	// å¯åŠ¨instrumentæµ‹è¯•ï¼Œå¹¶ä¸”è®²æ§åˆ¶å°è¾“å‡ºä¿å­˜æˆæ–‡ä»¶
 	OnClickListener mButton_function_listener_2013121994145 = new OnClickListener() {
 		@SuppressWarnings("unused")
 		@Override
 		public void onClick(View v) {
 			AndroidUtilFunc.PL("start");
 
-			// ÒªÖ´ĞĞµÄÃüÁîĞĞ
+			// è¦æ‰§è¡Œçš„å‘½ä»¤è¡Œ
 			// String cmd="ls";
 			// String
 			// cmd="am instrument -w com.tencent.qqlive.test/android.test.InstrumentationTestRunner 1>/mnt/sdcard/GT/test_2013-11-23-151255.log 2>&1";

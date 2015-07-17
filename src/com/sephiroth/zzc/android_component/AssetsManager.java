@@ -13,22 +13,22 @@ public class AssetsManager {
 
 	/**
 	 * 
-	 * ¸´ÖÆAssetsÄ¿Â¼ÏÂµÄÎÄ¼şµ½Ö¸¶¨Ä¿Â¼
-	 * ÎŞÊÓÄ¿±êÎÄ¼şÊÇ·ñ´æÔÚ£¬Ò»ÂÉ¸²¸Ç
+	 * å¤åˆ¶Assetsç›®å½•ä¸‹çš„æ–‡ä»¶åˆ°æŒ‡å®šç›®å½•
+	 * æ— è§†ç›®æ ‡æ–‡ä»¶æ˜¯å¦å­˜åœ¨ï¼Œä¸€å¾‹è¦†ç›–
 	 * 
-	 * ÀıÈç¸ùÄ¿Â¼ÏÂµÄÎÄ¼şa.txt£¬¿½±´µ½sd¿¨²¢ÃüÃûÎªaa.log
+	 * ä¾‹å¦‚æ ¹ç›®å½•ä¸‹çš„æ–‡ä»¶a.txtï¼Œæ‹·è´åˆ°sdå¡å¹¶å‘½åä¸ºaa.log
 	 * copyFileTo("a.txt","/sdcard/path/aa.log",context)
 	 * 
-	 * ¸´ÖÆ×ÓÄ¿Â¼ÏÂµÄÎÄ¼ş/path/a.txt£¬¿½±´µ½sd¿¨²¢ÃüÃûÎªaa.log
+	 * å¤åˆ¶å­ç›®å½•ä¸‹çš„æ–‡ä»¶/path/a.txtï¼Œæ‹·è´åˆ°sdå¡å¹¶å‘½åä¸ºaa.log
 	 * copyFileTo("path/a.txt","sdcard/aa.log",context)
 	 * 
 	 * @param assetsPath
-	 *            assetsÄ¿Â¼ÖĞµÄÎÄ¼şÂ·¾¶
+	 *            assetsç›®å½•ä¸­çš„æ–‡ä»¶è·¯å¾„
 	 * @param desPath
-	 *            Ä¿±êÎÄ¼şÂ·¾¶
+	 *            ç›®æ ‡æ–‡ä»¶è·¯å¾„
 	 * @param myContext
-	 *            µ÷ÓÃµÄContext
-	 * @return true ¸´ÖÆ³É¹¦ false ¸´ÖÆÊ§°Ü
+	 *            è°ƒç”¨çš„Context
+	 * @return true å¤åˆ¶æˆåŠŸ false å¤åˆ¶å¤±è´¥
 	 */
 	public static boolean copyFileTo(String assetsPath, String desPath,
 			Context context) {
@@ -36,16 +36,16 @@ public class AssetsManager {
 		File f = new File(desPath);
 
 		if (!f.getParentFile().exists()) {
-			// Ä¿±êÎÄ¼şËùÔÚÄ¿Â¼²»´æÔÚ
+			// ç›®æ ‡æ–‡ä»¶æ‰€åœ¨ç›®å½•ä¸å­˜åœ¨
 			if (!f.getParentFile().mkdirs()) {
 				android.util.Log
-						.d("AssetsManager copyFileTo", "Ä¿±êÄ¿Â¼²»´æÔÚ£¬´´½¨Ä¿Â¼Ê§°Ü");
+						.d("AssetsManager copyFileTo", "ç›®æ ‡ç›®å½•ä¸å­˜åœ¨ï¼Œåˆ›å»ºç›®å½•å¤±è´¥");
 				return false;
 			}
 		}
 
-		// ¸´ÖÆÎÄ¼ş
-		int byteread = 0; // ¶ÁÈ¡µÄ×Ö½ÚÊı
+		// å¤åˆ¶æ–‡ä»¶
+		int byteread = 0; // è¯»å–çš„å­—èŠ‚æ•°
 		InputStream in = null;
 		OutputStream out = null;
 
@@ -77,34 +77,34 @@ public class AssetsManager {
 	}
 	
 	/**
-	 * ¸´ÖÆAssetsÄ¿Â¼ÏÂµÄÎÄ¼şµ½Ö¸¶¨Ä¿Â¼
-	 * µ±Ä¿±êÎÄ¼ş´æÔÚÊÇ£¬¸ù¾İÊÇ·ñ¸²²ÎÊı¾ö¶¨
+	 * å¤åˆ¶Assetsç›®å½•ä¸‹çš„æ–‡ä»¶åˆ°æŒ‡å®šç›®å½•
+	 * å½“ç›®æ ‡æ–‡ä»¶å­˜åœ¨æ˜¯ï¼Œæ ¹æ®æ˜¯å¦è¦†å‚æ•°å†³å®š
 	 * 
-	 * ÀıÈç¸ùÄ¿Â¼ÏÂµÄÎÄ¼şa.txt£¬¿½±´µ½sd¿¨²¢ÃüÃûÎªaa.log
+	 * ä¾‹å¦‚æ ¹ç›®å½•ä¸‹çš„æ–‡ä»¶a.txtï¼Œæ‹·è´åˆ°sdå¡å¹¶å‘½åä¸ºaa.log
 	 * copyFileTo("a.txt","/sdcard/path/aa.log",context)
 	 * 
-	 * ¸´ÖÆ×ÓÄ¿Â¼ÏÂµÄÎÄ¼ş/path/a.txt£¬¿½±´µ½sd¿¨²¢ÃüÃûÎªaa.log
+	 * å¤åˆ¶å­ç›®å½•ä¸‹çš„æ–‡ä»¶/path/a.txtï¼Œæ‹·è´åˆ°sdå¡å¹¶å‘½åä¸ºaa.log
 	 * copyFileTo("path/a.txt","sdcard/aa.log",context)
 	 * 
 	 * @param assetsPath
-	 *            assetsÄ¿Â¼ÖĞµÄÎÄ¼şÂ·¾¶
+	 *            assetsç›®å½•ä¸­çš„æ–‡ä»¶è·¯å¾„
 	 * @param desPath
-	 *            Ä¿±êÎÄ¼şÂ·¾¶
+	 *            ç›®æ ‡æ–‡ä»¶è·¯å¾„
 	 * @param context
-	 *            µ÷ÓÃµÄContext
+	 *            è°ƒç”¨çš„Context
 	 * @param isOverride
-	 *            ÊÇ·ñ¸²¸ÇÔ­ÓĞÎÄ¼ş
-	 * @return true ¸´ÖÆ³É¹¦ false ¸´ÖÆÊ§°Ü
+	 *            æ˜¯å¦è¦†ç›–åŸæœ‰æ–‡ä»¶
+	 * @return true å¤åˆ¶æˆåŠŸ false å¤åˆ¶å¤±è´¥
 	 */
 	public static boolean copyFileTo(String assetsPath, String desPath,
 			Context context,boolean isOverride){
 		
 		if(!isOverride&&new File(desPath).exists()){
 			android.util.Log
-			.d("AssetsManager copyFileTo", "²»¸²¸ÇÄ¿±êÎÄ¼şÇÒÄ¿±êÎÄ¼ş´æÔÚ£¬²»½øĞĞ¿½±´£¬·µ»Øfalse");
+			.d("AssetsManager copyFileTo", "ä¸è¦†ç›–ç›®æ ‡æ–‡ä»¶ä¸”ç›®æ ‡æ–‡ä»¶å­˜åœ¨ï¼Œä¸è¿›è¡Œæ‹·è´ï¼Œè¿”å›false");
 			return false;
 		}else{
-			//·ñÔò¾ùÖ´ĞĞÇ¿ĞĞ¿½±´Âß¼­
+			//å¦åˆ™å‡æ‰§è¡Œå¼ºè¡Œæ‹·è´é€»è¾‘
 			return copyFileTo(assetsPath,desPath,context);
 		}
 	}
