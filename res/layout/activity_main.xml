@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" 
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/text_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello,android." />
+    
+    <Button
+        android:id="@+id/button_01_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1..current test function_1's enter"
+        />
+    <Button
+        android:id="@+id/button_02_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2..current test function_2's enter"
+        />
+    <Button
+        android:id="@+id/button_03_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3..current test function_3's enter"
+        />
+    <Button
+        android:id="@+id/button_04_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4..current test function_4's enter"
+        />
+    
+
+</LinearLayout>
